@@ -225,7 +225,7 @@ nav .menu-btn .burger1::before {
 
 .showcase {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   z-index: -1;
@@ -234,13 +234,14 @@ nav .menu-btn .burger1::before {
 
 .showcase .video-container {
   width: 100%;
+  height: 100vh;
 }
 
 .showcase .video-container video {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
 }
 
 .showcase .content {
@@ -275,8 +276,8 @@ nav .menu-btn .burger1::before {
 }
 
 .videos {
-  background-color: #fff;
-  height: 100vh;
+  background-color: #005dff;
+  height: auto;
 }
 
 .videos h1 {
@@ -284,8 +285,9 @@ nav .menu-btn .burger1::before {
   margin: 0;
   padding: 1rem;
   font-size: clamp(25px, 2.5rem, 5vw);
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 800;
+  color: #fff;
   letter-spacing: 0.1em;
 }
 
@@ -296,6 +298,7 @@ nav .menu-btn .burger1::before {
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin: 0 1rem 0 1rem;
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 1000px) {
@@ -313,7 +316,7 @@ nav .menu-btn .burger1::before {
 }
 
 .videos .video-cards .card {
-  background-color: #F5F5F5;
+  background-color: #006dff;
   border-radius: 8px;
   padding: 1rem;
   margin: 0.5rem;
@@ -325,8 +328,11 @@ nav .menu-btn .burger1::before {
 }
 
 .videos .video-cards .info h1 {
+  color: #fff;
   text-align: left;
   font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0;
 }
 
 .videos .video-cards .info a {
@@ -337,5 +343,14 @@ nav .menu-btn .burger1::before {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   border-radius: 50px;
   margin-left: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.videos .video-cards .info a:hover {
+  background-color: #fff;
+  color: #005dff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */

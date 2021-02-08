@@ -193,18 +193,18 @@ nav{
 }
 .showcase{
     width: 100%;
-    height: 100%;
+    height:100vh;
     position: relative;
     overflow: hidden;
     z-index: -1;
     top: 0;
     .video-container{
         width: 100%;
-        
+        height: 100vh;
         video{
             width: 100%;
-            object-fit: contain;
-            height: auto;
+            object-fit: cover;
+            height: 100vh;
         }
     }
     .content{
@@ -234,15 +234,16 @@ nav{
     }
 }
 .videos{
-    background-color: #fff;
-    height: 100vh;
+    background-color: #005dff;
+    height: auto;
     h1{
         text-align: center;
         margin: 0;
         padding: 1rem;
         font-size: clamp(25px, 2.5rem, 5vw);
-        font-family: $Roboto;
+        font-family: $MontserratA;
         font-weight: 800;
+        color: #fff;
         letter-spacing: 0.1em;
     }
     .video-cards{
@@ -250,6 +251,7 @@ nav{
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
         margin: 0 1rem 0 1rem;
+        padding-bottom: 2rem;
         @include tab(){
             grid-template-columns: repeat(2,1fr);
         }
@@ -257,7 +259,7 @@ nav{
             grid-template-columns: repeat(1,1fr);
         }
         .card{
-            background-color: #F5F5F5;
+            background-color: #006dff;
             border-radius: 8px;
             padding: 1rem;
             margin: 0.5rem;
@@ -270,8 +272,11 @@ nav{
         }
         .info{
             h1{
+                color: #fff;
                 text-align: left;
                 font-size: 1.5rem;
+                font-family: $Nunito;
+                letter-spacing: 0;
             }
             a{
                 text-decoration: none;
@@ -281,6 +286,12 @@ nav{
                 padding: 0.5rem 1.5rem 0.5rem 1.5rem;
                 border-radius: 50px;
                 margin-left: 1rem;
+                transition: 0.5s;
+                &:hover{
+                    background-color: #fff;
+                    color: #005dff;
+                    transition: 0.5s;
+                }
         }
         }
     }
