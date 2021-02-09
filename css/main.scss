@@ -234,7 +234,7 @@ nav{
     }
 }
 .videos{
-    background-color: #005dff;
+    background-color: #00076D;
     height: auto;
     h1{
         text-align: center;
@@ -285,7 +285,7 @@ nav{
                 font-family: $Nunito;
                 padding: 0.5rem 1.5rem 0.5rem 1.5rem;
                 border-radius: 50px;
-                margin-left: 1rem;
+                margin-left: 0.5rem;
                 transition: 0.5s;
                 &:hover{
                     background-color: #fff;
@@ -294,5 +294,34 @@ nav{
                 }
         }
         }
+    }
+}
+#seeall{
+    text-decoration: none;
+    color: #fff;
+    background-color: #006dff;
+    font-family: $Nunito;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    transition: 0.5s;
+    float: right;
+    &:hover{
+        background-color: #fff;
+        color: #005dff;
+        transition: 0.5s;
+    }
+}
+.blogs{
+    background-color: #009efd;;
+    h1{
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+        font-size: clamp(25px, 2.5rem, 5vw);
+        font-family: $MontserratA;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: 0.1em;
     }
 }
