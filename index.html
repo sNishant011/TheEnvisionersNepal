@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
     <title>Home | Envisioners</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -44,19 +45,31 @@
 
         </ul>
     </div>
-    <section class="showcase">
-        <div class="video-container">
-            <video src="background/blue-cloud.mp4" autoplay muted loop></video>
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2016/06/25/12/35/graffiti-1478757_960_720.jpg">
+                <h1>Question Everything</h1>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2018/03/19/18/20/business-3240767_960_720.jpg">
+                <h1>Heading 1</h1>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2017/08/07/01/19/blueberry-2598341_960_720.jpg">
+                <h1>Dummy</h1>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.gr-assets.com/quotes/1511992603p8/8630.jpg">
+                <h1>Quotes</h1>
+            </div>
+
         </div>
-        <center>
-        <div class="content">
-            <li style="opacity: 1;"><h2>"Welcome to Envisioners World"</h2></li>
-            <li><h2>"Rising to Explore"</h2></li>
-            <li><h2>"Lie Behind the Truth"</h2></li>
-            <li><h2>"the world beyond vision"</h2></li>
-        </div>
-    </center>
-    </section>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
 <div class="videos">    <a href="#" id="seeall">See all</a>
 
     <h1>Our Videos</h1>
@@ -106,6 +119,27 @@
             <div class="info">
                 <h1>Is time travel possible?</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ducimus, asperiores earum officiis laborum quo commodi, animi quos eveniet corrupti nemo rem voluptatum natus cum ullam fuga dolore sapiente. Nisi?</p>
+            <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2019/04/08/17/18/tulips-4112431_960_720.jpg">
+            </div>
+            <div class="info">
+                <h1>See How you can be hacked?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ducimus, asperiores earum officiis laborum quo commodi, animi quos eveniet corrupti nemo rem voluptatum natus cum ullam fuga dolore sapiente. Nisi?</p>
+            <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2020/06/15/15/34/fog-5302291_960_720.jpg">
+            </div>
+            <div class="info">
+                <h1>Best CSS Codes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ducimus, asperiores earum officiis laborum quo commodi, animi quos eveniet corrupti nemo rem voluptatum natus cum ullam fuga dolore sapiente. Nisi?</p>
+            <a href="#">Read More</a>
             </div>
         </div>
     </div>
@@ -131,6 +165,24 @@ var currentScrollPos = window.pageYOffset;
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script>
     AOS.init();
+  </script>
+  
+  <script src="swiper/swiper-bundle.js"></script>
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+          loop: true,
+          effect: 'fade',
+
+          pagination: {
+              el: '.swiper-pagination',
+              dynamicBullets: true,
+          },
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+      });
   </script>
 </body>
 </html>
