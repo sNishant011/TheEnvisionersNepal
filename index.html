@@ -144,19 +144,52 @@
     </div>
 </div>
 <div class="social-feeds">
+    <a href="#" id="seeall">See all</a>
     <h1>Our Social Feeds</h1>
-    <!-- Place <div> tag where you want the feed to appear -->
 <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
-<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+</div>
+
+<footer>
+    <div class="not-map">
+    <div class="quick-links">
+        <h1>Explore</h1>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Contact</a></li>
+    </div>
+    <div class="about">
+        <h1>About Envisioners</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, optio neque unde atque impedit totam! Molestias dicta iusto debitis. Facere doloremque eligendi eum dolore sint fugiat iure voluptatibus neque ducimus?
+        </p>
+    </div>
+    <div class="social-links">
+        <h1>Stay Connected</h1>
+        <li> <a href="#"><img src="img/vectors/icons/004-facebook.svg">  Facebook</a></li>
+        <li><a href="#"><img src="img/vectors/icons/003-instagram.svg">  Instagram</a></li>
+        <li><a href="#"><img src="img/vectors/icons/001-twitter.svg">  Twitter</a></li>
+        <li><a href="#"><img src="img/vectors/icons/004-youtube.svg">  Youtube</a></li>
+    </div>
+    <div class="address">
+        <h1>Contact Us</h1>
+        <li> <img src="img/vectors/icons/001-placeholder.svg">  Tokha-3, Kathmandu, Nepal</li>
+        <li><a href="mailto:envisioners1010@gmail.com"> <img src="img/vectors/icons/002-gmail.svg">  envisioners1010@gmail.com</a></li>
+        <li><a href="tel:+977-9808399325"><img src="img/vectors/icons/001-phone-call.svg">  +977-9808399325</a></li>
+    </div>
+</div>
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d882.5794463992103!2d85.32758123727085!3d27.76918083872847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1ec413c4f615%3A0xa10c89d5bd7cdfe7!2sEkulag%20Tool!5e0!3m2!1sen!2snp!4v1612970371009!5m2!1sen!2snp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</footer>
+
 <script type="text/javascript">
-/* curator-feed-default-feed-layout */
 (function(){
 var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
 i.src = "https://cdn.curator.io/published/37af17cd-e593-4390-b4d5-5d04c9f8ec59.js";
 e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 })();
 </script>
-</div>
+
 <script>
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -202,10 +235,14 @@ var currentScrollPos = window.pageYOffset;
       var swiper = new Swiper('.swiper-container', {
           loop: true,
           effect: 'fade',
+          speed: 1300,
 
           pagination: {
               el: '.swiper-pagination',
               dynamicBullets: true,
+          },
+          autoplay:{
+              delay: 2000,
           },
           navigation: {
               nextEl: '.swiper-button-next',
@@ -215,3 +252,5 @@ var currentScrollPos = window.pageYOffset;
   </script>
 </body>
 </html>
+<!-- 
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
