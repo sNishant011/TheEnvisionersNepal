@@ -27,7 +27,6 @@
         </ul>
         <div class="menu-btn" onclick="showOverlay()" id="open">
             <span class="burger1"></span>
-            <span class="burger2"></span>
         </div>
     </nav>
 
@@ -109,8 +108,8 @@
         </div>
     </div>
 </div>
-<div class="blogs">
-    <h1>Our Recent Blogs</h1>
+<div class="blogs"><a href="#" id="seeall">See all</a>
+    <h1>Our Recent Blogs</h1> 
     <div class="blog-cards">
         <div class="card">
             <div class="image">
@@ -144,18 +143,48 @@
         </div>
     </div>
 </div>
-<!-- <script>
+<div class="social-feeds">
+    <h1>Our Social Feeds</h1>
+    <!-- Place <div> tag where you want the feed to appear -->
+<div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+<script type="text/javascript">
+/* curator-feed-default-feed-layout */
+(function(){
+var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+i.src = "https://cdn.curator.io/published/37af17cd-e593-4390-b4d5-5d04c9f8ec59.js";
+e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+</script>
+</div>
+<script>
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
+    var x = window.matchMedia("(min-width: 1000px)");
+    var y = window.matchMedia("(max-width: 1000px)");
 var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("env-logo").style.display = "flex";
-  } else {
-    document.getElementById("env-logo").style.display = "none";
+  if (prevScrollpos > currentScrollPos &&  x.matches) {
+    document.getElementById("env-logo").style.height = "100px";
+    document.getElementById("navbar").style.background = "#005dff";
+
+  }
+  if(prevScrollpos < currentScrollPos && x.matches){
+    document.getElementById("env-logo").style.height = "0";
+    document.getElementById("navbar").style.background = "#005dff";
+  }
+     else {
+        
+    document.getElementById("navbar").style.background = "rgba(0, 94, 255, 0.678)";
+  }
+  if(prevScrollpos > currentScrollPos && y.matches){
+      document.getElementById("navbar").style.background = "rgba(0, 94, 255, 0.308)";
+  }
+  if(prevScrollpos < currentScrollPos && y.matches){
+      document.getElementById("navbar").style.background = "#005dff";
   }
   prevScrollpos = currentScrollPos;
 }
-    </script> !-->
+    </script> 
    <script type="text/javascript" src="js/index.js"></script> 
    <script type="text/javascript" src="js/smoothscroll.js"></script> 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
