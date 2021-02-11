@@ -34,6 +34,7 @@ html,body{
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: #009efd;
 }
 ::-webkit-scrollbar{
     width: 8px;
@@ -213,130 +214,277 @@ nav{
     }
 }
 
-.swiper-container {
-
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-
-}
-
-.swiper-container .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.swiper-container .swiper-slide img {
-    height: 87vh;
-    width: 100%;
-    object-fit: cover;
-    @include mobile(){
-        height: 50vh;
-        object-fit: cover;
-    }
-}
-
-.swiper-container .swiper-slide h1 {
-    position: absolute;
-    bottom: 5%;
-    font-family: 'Nunito', sans-serif;
-    color: #fff;
-    text-shadow: 3px 3px 10px #000;
-}
-
-.videos{
-    background-color: #fff;
-    height: auto;
+.blogs{
+    background-color: #009efd;
     h1{
+        margin: 0;
+        margin-top: 160px;
+
+
         text-transform: uppercase;
         text-align: center;
-        margin: 0;
         padding: 1rem;
+        padding-top: 1.5rem;
         font-size: clamp(20px, 2.5rem, 5vw);
         font-family: $MontserratA;
         font-weight: 800;
-        color: #005dff;
+        color: #fff;
         letter-spacing: 0.1em;
-        
         @include mobile(){
             text-align: left;
             text-decoration: underline;
             width: 70%;
+            margin-top: 100px;
         }
     }
-    .video-cards{
+    .blog-grid{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3,1fr);
         grid-gap: 2rem;
-        margin: 0 1rem 0 1rem;
-        padding-bottom: 2rem;
         @include tab(){
-            grid-template-columns: repeat(2,1fr);
+            grid-gap: 0.5rem;
+            grid-template-columns: repeat(1,1fr);
         }
         @include mobile(){
-            padding: 0.6rem;
-            margin: 0.6rem;
-            grid-template-columns: repeat(1,1fr);
-            grid-gap: 1rem;
+            grid-gap: 0.5rem;
         }
-        .card{
-            background-color: #deecfd;
-            border-radius: 0px;
-            padding: 1rem;
-            @include mobile(){
-                border-radius: 8px;
+        .blog-info{
+            width: 100%;
+            justify-content: center;
+            float: right;
+            margin-top: 0.5rem;
+            overflow: hidden;
+            background-color: #fff;
+            grid-column: 3;
+            @include tab(){
+                grid-column: 1/4;
             }
-            .video{ 
-                iframe{
+            .about-author{
                 width: 100%;
-                height: 300px;
+                padding-top: 1rem;
+                justify-items: center;
+                justify-content: center;
+                text-align: center;
+                font-family: $Nunito;
+                
+                img{
+                    height: 100px;
+                    object-fit: contain;
+                    border: 50%;
+                    justify-self: center;
+                    text-align: center;
+                }
+                h2{
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                    margin-left: 0.5rem;
+                    padding-left: 0.5rem;
+                    text-align: left;
+                }
+                p{
+                    font-size: 0.9rem;
+
+                    margin-left: 0.5rem;
+                    padding-left: 0.5rem;
+                    text-align: left;
                 }
             }
-        }
-        .info{
-            h1{
-                color: #005dff;
-                text-align: left;
-                font-size: 1.5rem;
-                font-family: $Nunito;
-                letter-spacing: 0;
-                border: 0;
-            }
-            a{
-                text-decoration: none;
-                color: #fff;
-                background-color: #005dff;
-                font-family: $Nunito;
-                padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-                border-radius: 50px;
-                margin-left: 0.5rem;
-                transition: 0.5s;
-                &:hover{
+            .blog-search{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input{
+                    margin:1rem 0.5rem 1rem 0.5rem;
+                    border: 2px solid #005dff;
+                    outline: 0;
+                    font-size: 1rem;
+                    padding: 0.7rem 1rem 0.7rem 1rem;
+                    border-radius: 50px;
+                    transition: 0.5s ease;
+                    text-align: center;
+                    font-family: $MontserratA;
+                    &:focus{
+                        outline: none;
+                        padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+
+                    }
+                    &:hover{
+                        padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+                        transition: 0.5s ease;
+                    }
+                    &::placeholder{
+                        font-size: 0.8rem;
+                        text-align: center;
+                    }
+                }
+                button{
+                    margin:1rem 0.5rem 1rem 0.5rem;
+                    font-family: $MontserratA;
+                    font-size:0.9rem;
+                    outline: none;
+                    border: 2px solid #005dff;
+                    border-radius: 50px;
                     background-color: #fff;
-                    color: #005dff;
-                    transition: 0.5s;
+                    color: #000;
+                    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+                    transition: 0.5s ease;
+
+                    &:hover{
+                        background-color: #005dff;
+                        color: #fff;
+                        transition: 0.5s ease;
+                    }
                 }
+
+            }
+            .categories{
+                position: relative;
+                padding-left: 1rem;
+                margin: 1rem;
+                font-family: $MontserratA;
+                li{
+                    margin-bottom: 0.8rem;
+                    list-style: none;
+                    font-size: 1rem;
+                    
+                    
+                    a{
+                        text-decoration: none;
+                        padding: 0.5rem;
+                        color: #005dff;
+                        transition: 0.5s ease;
+                        width: 100px;
+                        font-size: 1rem;
+
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            left: 5%;
+                            width: 10%;
+                            height: 2px;
+                            background-color: #005dff;
+                            margin-top: 6%;
+                            transition: 0.3s ease;
+                            @include tab(){
+                                margin-top: 3%;
+                                left: 2%;
+                            }
+                            @include mobile(){
+                                margin-top: 4%;
+                                left: 4%;
+                            }
+                        }
+                        &:hover{
+                            &::before{
+                                
+                            content: '';
+                            position: absolute;
+                            left: 5%;
+                            width: 40%;
+                            height: 2px;
+                            background-color: #005dff;
+                            transition: 0.5s ease;
+                            @include tab(){
+                                margin-top: 3%;
+                                left: 2%;
+                            }
+                            @include mobile(){
+                                margin-top: 4%;
+                                left: 4%;
+                            }
+                            }
+                        }
+                        
+                    }
+                }
+            }
         }
+        .blog-detail{
+            grid-column: 1/3;
+            @include tab(){
+                grid-column: 1/4;
+            }
+            .blog-image{
+                text-align: center;
+                justify-content: center;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    height: auto;
+                }
+            }
+            .blog-content{
+                padding: 1.5rem;
+                p{
+                    font-size: 0.9rem;
+                    font-family: $MontserratA;
+                }
+            }
+        }
+        .blog-cards{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 1rem;
+            padding:0rem;
+            padding-right: 0;
+            
+            margin: 0.5rem;
+            grid-column: 1/3;
+            @include tab(){
+                grid-column: 1;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .share-icons{
+
+            
+                 img{
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            .card{
+                background-color: #fff;
+                .card-img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: 250px;
+                        object-fit: cover;
+
+                    }
+                }
+                .card-info{
+                    padding: 0.5rem;
+                    h1{
+                        font-family: $Nunito;
+                        color: #000;
+                        font-size: 1.5rem;
+                        margin: 0rem;
+                        padding: 0;
+                        text-align: left;
+                        margin: 0.5rem 0 0.5rem 0.5rem;
+                    }
+                    p{
+                        font-family: $Nunito;
+                        font-weight: bold;
+                        font-size: 1rem;
+                        margin: 0;
+                        letter-spacing: 0.06 em;
+                        padding: 0;
+                        margin: 0.5rem 0 0.5rem 0.5rem;
+
+                    }
+                }
+                
+            }
         }
     }
 }
-.seeall{
-    width: 30%;
-    float: right;
+#date, #author{
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 #seeall{
     
@@ -349,8 +497,10 @@ nav{
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     border-radius: 50px;
     margin-top: 1.3rem;
+    margin-bottom: 2%;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    border: 2px solid #006dff;
     right: 2%;
     &:hover{
         background-color: #fff;
@@ -360,168 +510,6 @@ nav{
     @include mobile(){
         margin-top: 0.5rem;
         font-size: 0.9rem;
-    }
-}
-.blogs{
-    background-color: #009efd;
-    h1{
-        text-transform: uppercase;
-        text-align: center;
-        margin: 0;
-        padding: 1rem;
-        font-size: clamp(20px, 2.5rem, 5vw);
-        font-family: $MontserratA;
-        font-weight: 800;
-        color: #fff;
-        letter-spacing: 0.1em;
-        @include mobile(){
-            text-align: left;
-            text-decoration: underline;
-            width: 70%;
-        }
-    }
-    .blog-cards{
-        padding: 2rem;
-        display: grid;
-        box-sizing: border-box;
-        grid-template-columns: repeat(3,1fr);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
-        margin: 0 1rem 0 1rem;
-        padding-bottom: 2rem;
-        @include tab(){
-            grid-template-columns: repeat(2,1fr);
-        }
-        @include mobile(){
-            padding: 0.6rem;
-            margin: 0.6rem;
-            grid-template-columns: repeat(1,1fr);
-            grid-gap: 1rem;
-        }
-        .card{
-            background-color: #4d9dff;
-            border-radius: 0px;
-            padding: 1rem;
-            padding-bottom: 1.8rem;
-            margin: 0rem;
-            transition: 0.5s;
-            box-sizing: border-box;
-            &:hover{
-                background-color: #005dff;
-                transition: 0.5s;
-                .info{
-                    a{
-                        box-shadow: 0px 0px 20px #000;
-
-                    }
-                }
-            }
-            @include mobile(){
-                border-radius: 8px;
-            }
-            .image{ 
-                img{
-                    width: 100%;
-                    height: auto;
-                }
-            }
-        
-        .info{
-            h1{
-                color: #fff;
-                text-align: left;
-                font-size: 1.5rem;
-                font-family: $Nunito;
-                letter-spacing: 0;
-                padding: 0.5rem;
-                text-transform: uppercase;
-            }
-            p{
-                padding: 0.5rem;
-                color: #fff;
-                margin: 0;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 300;
-                letter-spacing: 0.06rem;
-                margin-bottom: 1rem;
-                font-size: 0.8;
-            }
-            a{
-                text-decoration: none;
-                color: #fff;
-                position: relative;
-                background-color: #005dff;
-                font-family: $Nunito;
-                padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-                border-radius: 50px;
-                margin-left: 0.5rem;
-                transition: 0.5s;
-                &:hover{
-                    background-color: #fff;
-                    color: #005dff;
-                    transition: 0.5s;
-                }
-        }
-        }
-        }
-    }
-}
-.social-feeds{
-    background-color: #009efd;
-    h1{
-        text-transform: uppercase;
-        text-align: center;
-        margin: 0;
-        padding: 1rem;
-        font-size: clamp(20px, 2.5rem, 5vw);
-        font-family: $MontserratA;
-        font-weight: 800;
-        color: #fff;
-        letter-spacing: 0.1em;
-        @include mobile(){
-            text-align: left;
-            text-decoration: underline;
-            width: 70%;
-        }
-    }
-    
-    .crt-widget .crt-post-fullname a{
-        font-family: $fira;
-    }
-    .crt-widget .crt-post-text{
-        font-family: $Roboto;
-        font-size: 0.8rem;
-    }
-    .crt-widget .crt-post-username a{
-        font-family: $MontserratA;
-        margin-right: 1rem;
-        font-size: 0.9rem;
-        font-weight: 900;
-        text-transform: lowercase;
-    }
-    .crt-widget .crt-post-date a{
-        font-family: $fira;
-    }
-    .crt-widget .crt-load-more{
-        font-size: clamp(0.9rem, 1.1rem, 1.2rem);
-        font-family: $Nunito;
-        transition: 0.5s ease;
-
-        &:hover{
-            background-color: #005dff;
-            color: #fff;
-            transition: 0.5s ease;
-        }
-
-    }
-    
-    @include mobile(){
-        padding: 1rem;
-        h1{
-            text-align: left;
-            text-decoration: underline;
-        }
     }
 }
 footer{
@@ -627,8 +615,10 @@ footer{
                       transition: 0.3s ease;
                       border-radius: 50px;
                       clip-path: circle(100%);
-                    }
-                }
+
+
+                  }
+              }
         }
     }
 }
