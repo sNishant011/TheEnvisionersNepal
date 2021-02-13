@@ -304,9 +304,10 @@ nav .menu-btn .burger1::after {
   float: right;
   margin-top: 0.5rem;
   overflow: hidden;
-  background-color: #fff;
+  background-image: linear-gradient(20deg, #6a11cb 0%, #2575fc 100%);
   -ms-grid-column: 3;
   grid-column: 3;
+  color: #fff;
 }
 
 @media (max-width: 1000px) {
@@ -367,9 +368,9 @@ nav .menu-btn .burger1::after {
 
 .blogs .blog-grid .blog-info .blog-search input {
   margin: 1rem 0.5rem 1rem 0.5rem;
-  border: 2px solid #005dff;
   outline: 0;
   font-size: 1rem;
+  border: 2px solid transparent;
   padding: 0.7rem 1rem 0.7rem 1rem;
   border-radius: 50px;
   -webkit-transition: 0.5s ease;
@@ -414,7 +415,7 @@ nav .menu-btn .burger1::after {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 0.9rem;
   outline: none;
-  border: 2px solid #005dff;
+  border: 2px solid transparent;
   border-radius: 50px;
   background-color: #fff;
   color: #000;
@@ -426,6 +427,7 @@ nav .menu-btn .burger1::after {
 .blogs .blog-grid .blog-info .blog-search button:hover {
   background-color: #005dff;
   color: #fff;
+  border: 2px solid #fff;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -446,7 +448,7 @@ nav .menu-btn .burger1::after {
 .blogs .blog-grid .blog-info .categories li a {
   text-decoration: none;
   padding: 0.5rem;
-  color: #005dff;
+  color: #fff;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   width: 100px;
@@ -459,7 +461,7 @@ nav .menu-btn .burger1::after {
   left: 5%;
   width: 10%;
   height: 2px;
-  background-color: #005dff;
+  background-color: #fff;
   margin-top: 6%;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -485,7 +487,7 @@ nav .menu-btn .burger1::after {
   left: 5%;
   width: 40%;
   height: 2px;
-  background-color: #005dff;
+  background-color: #fff;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -541,6 +543,10 @@ nav .menu-btn .burger1::after {
 .blogs .blog-grid .blog-detail .blog-content p {
   font-size: 0.9rem;
   font-family: "Montserrat Alternates", sans-serif;
+  letter-spacing: 0.07rem;
+  font-weight: 900;
+  word-spacing: 0.5rem;
+  line-height: 1.5rem;
 }
 
 .blogs .blog-grid .blog-cards {
