@@ -763,7 +763,7 @@ nav .menu-btn .burger1::after {
 }
 
 .introduction2 .quote {
-  font-size: clamp(1rem, 2.5rem, 4vw);
+  font-size: clamp(1.5rem, 2.5rem, 4vw);
   margin: 1.5rem;
   margin-top: 0;
   margin-bottom: 0.5rem;
