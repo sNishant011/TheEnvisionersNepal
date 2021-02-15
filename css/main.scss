@@ -38,6 +38,7 @@ html,body{
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
     width: 8px;
