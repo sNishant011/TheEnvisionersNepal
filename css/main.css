@@ -480,6 +480,7 @@ nav .menu-btn .burger1::after {
   .blogs .blog-cards {
     padding: 0.6rem;
     margin: 0.6rem;
+    margin-bottom: 0;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
@@ -562,6 +563,7 @@ nav .menu-btn .burger1::after {
 }
 
 .social-feeds {
+  padding-top: 160px;
   background-color: #009efd;
 }
 
@@ -623,6 +625,7 @@ nav .menu-btn .burger1::after {
 @media (max-width: 600px) {
   .social-feeds {
     padding: 1rem;
+    padding-top: 100px;
   }
   .social-feeds h1 {
     text-align: left;
@@ -642,7 +645,7 @@ nav .menu-btn .burger1::after {
 
 .introduction {
   padding-top: 200px;
-  background-image: url(../background/sand-4726119_19201.jpg);
+  background-image: url(../background/aurora.png);
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
@@ -786,6 +789,98 @@ nav .menu-btn .burger1::after {
   padding: 2rem;
 }
 
+.more-videos {
+  background-color: #009efd;
+  height: auto;
+  height: 100%;
+}
+
+.more-videos h1 {
+  font-size: clamp(1.2rem, 2.5rem, 4.5vw);
+  font-family: "Nunito", sans-serif;
+  padding: 1rem 0.5rem 1.5rem 1rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  color: #fff;
+  margin: 0;
+  margin-left: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .more-videos h1 {
+    margin-left: 0;
+    padding-left: 0.5rem;
+  }
+}
+
+.more-videos .video-grid {
+  padding: 2rem;
+  margin: 1rem;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  .more-videos .video-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .more-videos .video-grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5rem;
+    padding: 0.5rem;
+    margin: 0;
+  }
+}
+
+.more-videos .video-grid .card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 0rem;
+  background-color: #005dff;
+}
+
+@media (max-width: 600px) {
+  .more-videos .video-grid .card {
+    border-radius: 5px;
+  }
+}
+
+.more-videos .video-grid .card iframe {
+  width: 100%;
+  height: 250px;
+}
+
+.more-videos .video-grid .card .info {
+  width: 100%;
+}
+
+.more-videos .video-grid .card .info h1 {
+  font-family: "Nunito", sans-serif;
+  padding: 0.5rem 0 0.5rem 0;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  color: #fff;
+  width: 100%;
+  font-size: clamp(1.1rem, 2rem, 4vw);
+  margin-left: 0;
+}
+
 footer {
   padding: 2rem;
   font-family: "Nunito", sans-serif;
@@ -921,5 +1016,9 @@ footer .not-map a:hover::after {
   border-radius: 50px;
   -webkit-clip-path: circle(100%);
           clip-path: circle(100%);
+}
+
+.latest-video iframe {
+  height: 80vh;
 }
 /*# sourceMappingURL=main.css.map */
