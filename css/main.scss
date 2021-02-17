@@ -751,8 +751,10 @@ input {
 }
 // Layout
 .row {
+    width: 100%;
   display:flex;
   .col {
+      width: 100%;
     background: rgba( 114, 0, 255, 0.50 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 2.0px );
@@ -762,7 +764,8 @@ input {
     margin: 1rem 2rem 1rem 2rem;
     flex:1;
     @include mobile(){
-        margin: 0.5rem;
+        width: 100%;
+        margin: 0rem;
     }
     &:last-child {
     }
