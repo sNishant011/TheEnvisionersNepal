@@ -517,7 +517,7 @@ nav .menu-btn .burger1::after {
 
 @media (max-width: 600px) {
   .blogs .blog-grid .blog-info .categories li a:hover::before {
-    margin-top: 4%;
+    margin-top: 5%;
     left: 4%;
   }
 }
@@ -793,7 +793,6 @@ footer .not-map p {
 footer .not-map a {
   color: #005dff;
   padding: 0.3rem;
-  padding-left: 0;
   font-size: clamp(0.8rem, 1.1rem, 1.2rem);
   position: relative;
   overflow: hidden;

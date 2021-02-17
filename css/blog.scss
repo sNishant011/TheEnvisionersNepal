@@ -401,7 +401,7 @@ nav{
                                 left: 2%;
                             }
                             @include mobile(){
-                                margin-top: 4%;
+                                margin-top: 5%;
                                 left: 4%;
                             }
                             }
@@ -616,7 +616,6 @@ footer{
         a{
             color: #005dff;
             padding: 0.3rem;
-            padding-left: 0;
             font-size:clamp(0.8rem, 1.1rem, 1.2rem);
             position: relative;
             overflow: hidden;

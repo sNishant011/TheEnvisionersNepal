@@ -9,8 +9,40 @@
     <title>Members | Envisioners</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<style>
+    #member1{
+        margin-top: 200px;
+    }
     
+    .member-btn{
+        z-index: 10;
+        top: 40%;
+        right: 0;
+        position: fixed;
+        
+    }
+    .member-btn a{
+        background-color: #005dff;
+        padding: 1rem 1.5rem 1rem 1rem;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+
+    }
+    @media(max-width:600px){
+        #member1{margin-top: 100px;}
+        .member-btn{
+            position: relative;
+            margin: 20px;
+            margin-left: 0;
+        }
+        .member-btn a{
+            clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+
+        }
+    }
+</style>
+<body>
     <nav id="navbar">
         <div class="logo" id="env-logo"><a href="index.html"><img src="img/en.png"> </a> </div>
 
@@ -18,11 +50,11 @@
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="blog-home.html">Blogs</a> </li>
             <li> <a href="social-post.html">Photos</a> </li>
-            <li><a href="#">Videos</a></li>
-            <li> <a href="#">Explanation</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li> <a href="explanation.html">Explanation</a></li>
             <li> <a href="members.html">Members</a></li>
 
-            <li> <a href="#">About Us</a></li>
+            <li> <a href="about.html">About Us</a></li>
 
 
         </ul>
@@ -37,18 +69,17 @@
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="blog-home.html">Blogs</a> </li>
             <li> <a href="social-post.html">Photos</a> </li>
-            <li><a href="#">Videos</a></li>
-            <li> <a href="#">Explanation</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li> <a href="explanation.html">Explanation</a></li>
             <li> <a href="members.html">Members</a></li>
 
-            <li> <a href="#">About Us</a></li>
+            <li> <a href="about.html">About Us</a></li>
 
 
         </ul>
     </div>
     
-    
-<h1 style="margin-top: 200px; background: rgba( 29, 132, 255, 0.25 );
+<h1 id="member1" style=" background: rgba( 29, 132, 255, 0.25 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 8.0px );
 -webkit-backdrop-filter: blur( 8.0px );
@@ -87,26 +118,29 @@ backdrop-filter: blur( 8.0px );
 -webkit-backdrop-filter: blur( 8.0px );
 padding: 1rem;
 border: 1px solid rgba( 255, 255, 255, 0.18 );">Our Other Members</h1>
+    <div class="member-btn"><a href="https://forms.gle/Bm8u2kauXpd833x37" target="_blank">Want to Become our Member?</a></div>
+
 <footer>
     <div class="not-map">
     <div class="quick-links">
         <h1>Explore</h1>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">Photos</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog-home.html">Blogs</a></li>
+        <li><a href="social-post.html">Photos</a></li>
+        <li><a href="about.html">About</a></li>
     </div>
     <div class="about">
         <h1>About Envisioners</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, optio neque unde atque impedit totam! Molestias dicta iusto debitis. Facere doloremque eligendi eum dolore sint fugiat iure voluptatibus neque ducimus?
+        <p> Providing certainty to the future is quite impossible but creating a better and promising future is all upon how we use our time and skills in the present. So, we are the group of individuals having the vision to improvise the future with our skills. Join us and contribute for a better future.
+
         </p>
     </div>
     <div class="social-links">
         <h1>Stay Connected</h1>
-        <li> <a href="#"><img src="img/vectors/icons/004-facebook.svg">  Facebook</a></li>
-        <li><a href="#"><img src="img/vectors/icons/003-instagram.svg">  Instagram</a></li>
-        <li><a href="#"><img src="img/vectors/icons/001-twitter.svg">  Twitter</a></li>
-        <li><a href="#"><img src="img/vectors/icons/004-youtube.svg">  Youtube</a></li>
+        <li> <a href="https://www.facebook.com/theenvisionersnepal"><img src="img/vectors/icons/004-facebook.svg">  Facebook</a></li>
+        <li><a href="https://www.instagram.com/envisionnepal/"><img src="img/vectors/icons/003-instagram.svg">  Instagram</a></li>
+        <li><a href="https://twitter.com/envisionnepal10"><img src="img/vectors/icons/001-twitter.svg">  Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCx1kyWF_pbFTcBNz-yp6rBg"><img src="img/vectors/icons/004-youtube.svg">  Youtube</a></li>
     </div>
     <div class="address">
         <h1>Contact Us</h1>
