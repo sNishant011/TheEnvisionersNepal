@@ -16,8 +16,7 @@ tl.from(".content li", 1, {
 
     }
 });
-var introgsap = gsap.timeline()
-introgsap.from(".introduction .intro-info p", 1.5, {
+gsap.from(".introduction .intro-info p", 1.5, {
     scrollTrigger: {
         trigger: '.introduction',
         start: 'top center',
@@ -26,7 +25,7 @@ introgsap.from(".introduction .intro-info p", 1.5, {
     opacity: 0,
     x: -100,
 });
-introgsap.from(".introduction .intro-info h1", 1, {
+gsap.from(".introduction .intro-info h1", 0.5, {
     scrollTrigger: {
         trigger: '.introduction',
         start: 'top center',
@@ -34,7 +33,7 @@ introgsap.from(".introduction .intro-info h1", 1, {
     opacity: 0,
     x: 100,
 });
-introgsap.from("#knowmore", 0.5, {
+gsap.from("#knowmore", 0.5, {
     scrollTrigger: {
         trigger: '.introduction',
         start: 'top center',
@@ -50,7 +49,7 @@ gsap.to('#knowmore', 0.5, {
     background: "#005dff",
 });
 
-gsap.to('.blogs', 1, {
+gsap.to('.blogs', 0.5, {
     scrollTrigger: {
         trigger: '.blogs',
         start: 'top center',
